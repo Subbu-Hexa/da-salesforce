@@ -6,6 +6,6 @@ trigger TestAccount on Account (after insert) {
         c.LastName = acc.Name;
         conLst.add(c);
     }
-      if(conLst.size()>0)
+      if(conLst.size()>1)
           insert conLst;
 }
